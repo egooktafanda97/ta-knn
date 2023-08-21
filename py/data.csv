@@ -1,0 +1,180 @@
+nama_barang,harga,jumlah_terjual,bulan
+Beras/kg,14.000,5100,1
+Beras/kg,14.000,4900,2
+Beras/kg,14.000,5700,3
+Beras/kg,14.000,11350,4
+Beras/kg,14.000,4700,5
+Beras/kg,14.000,6100,6
+Beras/kg,14.000,5000,7
+Beras/kg,14.000,5200,8
+Beras/kg,14.000,5000,9
+Beras/kg,14.000,4950,10
+Beras/kg,14.000,5200,11
+Beras/kg,14.000,5850,12
+Minyak/liter,16.000,3200,1
+Minyak/liter,16.000,3300,2
+Minyak/liter,16.000,3300,3
+Minyak/liter,16.000,6300,4
+Minyak/liter,16.000,2950,5
+Minyak/liter,16.000,4150,6
+Minyak/liter,16.000,2450,7
+Minyak/liter,16.000,3900,8
+Minyak/liter,16.000,3800,9
+Minyak/liter,16.000,3400,10
+Minyak/liter,16.000,3350,11
+Minyak/liter,16.000,4000,12
+Gula/kg,15.000,3050,1
+Gula/kg,15.000,3100,2
+Gula/kg,15.000,4100,3
+Gula/kg,15.000,7100,4
+Gula/kg,15.000,4050,5
+Gula/kg,15.000,5100,6
+Gula/kg,15.000,3950,7
+Gula/kg,15.000,3000,8
+Gula/kg,15.000,3200,9
+Gula/kg,15.000,3300,10
+Gula/kg,15.000,3350,11
+Gula/kg,15.000,4000,12
+Telur/papan,54.000,550,1
+Telur/papan,54.000,530,2
+Telur/papan,54.000,730,3
+Telur/papan,54.000,1300,4
+Telur/papan,54.000,490,5
+Telur/papan,54.000,720,6
+Telur/papan,54.000,495,7
+Telur/papan,54.000,500,8
+Telur/papan,54.000,490,9
+Telur/papan,54.000,520,10
+Telur/papan,54.000,510,11
+Telur/papan,54.000,580,12
+Susu/kaleng,10.000,960,1
+Susu/kaleng,10.000,900,2
+Susu/kaleng,10.000,1300,3
+Susu/kaleng,10.000,1520,4
+Susu/kaleng,10.000,870,5
+Susu/kaleng,10.000,940,6
+Susu/kaleng,10.000,850,7
+Susu/kaleng,10.000,910,8
+Susu/kaleng,10.000,920,9
+Susu/kaleng,10.000,930,10
+Susu/kaleng,10.000,950,11
+Susu/kaleng,10.000,1000,12
+Tv,3,700.000,55,2
+Tv,3,700.000,45,3
+Tv,3,700.000,40,4
+Tv,3,700.000,30,5
+Tv,3,700.000,30,6
+Tv,3,700.000,35,7
+Tv,3,700.000,40,8
+Tv,3,700.000,41,9
+Tv,3,700.000,42,10
+Tv,3,700.000,42,11
+Tv,3,700.000,72,12
+Mesin Cuci,2.548.000,45,1
+Mesin Cuci,2.548.000,30,2
+Mesin Cuci,2.548.000,30,3
+Mesin Cuci,2.548.000,25,4
+Mesin Cuci,2.548.000,18,5
+Mesin Cuci,2.548.000,20,6
+Mesin Cuci,2.548.000,22,7
+Mesin Cuci,2.548.000,47,8
+Mesin Cuci,2.548.000,45,9
+Mesin Cuci,2.548.000,45,10
+Mesin Cuci,2.548.000,40,11
+Mesin Cuci,2.548.000,58,12
+Kipas angin,400.000,100,1
+Kipas angin,400.000,78,2
+Kipas angin,400.000,60,3
+Kipas angin,400.000,58,4
+Kipas angin,400.000,40,5
+Kipas angin,400.000,38,6
+Kipas angin,400.000,35,7
+Kipas angin,400.000,50,8
+Kipas angin,400.000,36,9
+Kipas angin,400.000,50,10
+Kipas angin,400.000,70,11
+Kipas angin,400.000,65,12
+Kulkas,2.678.000,55,1
+Kulkas,2.678.000,40,2
+Kulkas,2.678.000,30,3
+Kulkas,2.678.000,25,4
+Kulkas,2.678.000,25,5
+Kulkas,2.678.000,26,6
+Kulkas,2.678.000,23,7
+Kulkas,2.678.000,32,8
+Kulkas,2.678.000,30,9
+Kulkas,2.678.000,38,10
+Kulkas,2.678.000,38,11
+Kulkas,2.678.000,40,12
+Ac,3.789.000,87,1
+Ac,3.789.000,70,2
+Ac,3.789.000,60,3
+Ac,3.789.000,47,4
+Ac,3.789.000,40,5
+Ac,3.789.000,35,6
+Ac,3.789.000,32,7
+Ac,3.789.000,40,8
+Ac,3.789.000,58,9
+Ac,3.789.000,55,10
+Ac,3.789.000,63,11
+Ac,3.789.000,58,12
+Baju,175.000,54,1
+Baju,175.000,36,2
+Baju,175.000,73,3
+Baju,175.000,147,4
+Baju,175.000,80,5
+Baju,175.000,43,6
+Baju,175.000,107,7
+Baju,175.000,53,8
+Baju,175.000,49,9
+Baju,175.000,20,10
+Baju,175.000,42,11
+Baju,175.000,60,12
+Celana,195.000,45,1
+Celana,195.000,40,2
+Celana,195.000,62,3
+Celana,195.000,126,4
+Celana,195.000,75,5
+Celana,195.000,47,6
+Celana,195.000,80,7
+Celana,195.000,35,8
+Celana,195.000,19,9
+Celana,195.000,29,10
+Celana,195.000,32,11
+Celana,195.000,47,12
+Dress/gamis,250.000,65,1
+Dress/gamis,250.000,55,2
+Dress/gamis,250.000,72,3
+Dress/gamis,250.000,210,4
+Dress/gamis,250.000,180,5
+Dress/gamis,250.000,60,6
+Dress/gamis,250.000,87,7
+Dress/gamis,250.000,45,8
+Dress/gamis,250.000,47,9
+Dress/gamis,250.000,48,10
+Dress/gamis,250.000,57,11
+Dress/gamis,250.000,70,12
+Hijab,35.000,95,1
+Hijab,35.000,100,2
+Hijab,35.000,230,3
+Hijab,35.000,570,4
+Hijab,35.000,314,5
+Hijab,35.000,120,6
+Hijab,35.000,325,7
+Hijab,35.000,93,8
+Hijab,35.000,83,9
+Hijab,35.000,102,10
+Hijab,35.000,97,11
+Hijab,35.000,211,12
+Tas,285.000,15,1
+Tas,285.000,17,2
+Tas,285.000,22,3
+Tas,285.000,46,4
+Tas,285.000,30,5
+Tas,285.000,15,6
+Tas,285.000,43,7
+Tas,285.000,18,8
+Tas,285.000,21,9
+Tas,285.000,7,10
+Tas,285.000,11,11
+Tas,285.000,32,12
