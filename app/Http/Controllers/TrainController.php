@@ -77,16 +77,19 @@ class TrainController extends Controller
             $v["JenisData"] = "train";
             array_push($newX, $v);
         }
-        $responseX = collect($response["y"])->toArray();
-        $newY = [];
-        foreach ($responseX as $v) {
-            $v["JenisData"] = "test";
-            array_push($newY, $v);
-        }
-        $newPreprocessing =  array_merge($newX, $newY);
+        // $responseX = collect($response["y"])->toArray();
+        // $newY = [];
+        // foreach ($responseX as $v) {
+        //     $v["JenisData"] = "test";
+        //     array_push($newY, $v);
+        // }
+        // $newPreprocessing =  array_merge($newX, $newY);
         \DB::table("preprocessing")->truncate();
-        $r = Preprocessing::insert($newPreprocessing);
-        return  response()->json($newPreprocessing);
+        // $r = Preprocessing::insert($newPreprocessing);
+        $r = Preprocessing::insert($newX);
+        return $newX;
+
+        return  response()->json($newX);
     }
     public function preprocessingSplitData()
     {
@@ -179,13 +182,14 @@ class TrainController extends Controller
     public function test()
     {
         $data = [
-            "harga" => 1000000, "jumlah_terjual" => 100, "bulan" => 2
+            "nama_barang" => "tas", "harga" => 800, "jumlah_terjual" => 522, "bulan" => 0
         ];
+
 
         // Konversi data menjadi format JSON
         $jsonData = json_encode($data);
         $process = new Process(
-            ['python', 'C:/Tempur/TA2023/algortmKnnLar/py/test.py', $jsonData],
+            ['python', 'C:/Tempur/TA2023/algortmKnnLar/py/manual.py', $jsonData],
             null,
             ['SYSTEMROOT' => getenv('SYSTEMROOT'), 'PATH' => getenv("PATH")]
         );
@@ -196,7 +200,7 @@ class TrainController extends Controller
             throw new ProcessFailedException($process);
         }
         $out = $process->getOutput();
-
+        dd($out);
         return $out;
     }
 }

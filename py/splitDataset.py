@@ -16,7 +16,7 @@ test_data = []
 # Split data for each unique nama_barang
 for nama_barang in unique_nama_barang:
     nama_barang_data = data[data["nama_barang"] == nama_barang]
-    train, test = train_test_split(nama_barang_data, test_size=0.2, random_state=42)
+    train, test = train_test_split(nama_barang_data, test_size=0.1, random_state=1)
     train_data.append(train)
     test_data.append(test)
 

@@ -11,9 +11,9 @@ export function PreprocessingTabs(props) {
             <Tabs.Item className="text-dark" title="Preproceesing">
                 {props.preprocessing}
             </Tabs.Item>
-            <Tabs.Item className="text-dark" title="Training Clasifikasi">
+            {/* <Tabs.Item className="text-dark" title="Training Clasifikasi">
                 {props.train}
-            </Tabs.Item>
+            </Tabs.Item> */}
         </Tabs.Group>
     );
 }
@@ -24,9 +24,9 @@ export function DTables(props) {
             <Tabs.Item className="text-dark" active title="Data Train">
                 {props.dTrain}
             </Tabs.Item>
-            <Tabs.Item className="text-dark" title="Data Test">
+            {/* <Tabs.Item className="text-dark" title="Data Test">
                 {props.dTest}
-            </Tabs.Item>
+            </Tabs.Item> */}
         </Tabs.Group>
     );
 }

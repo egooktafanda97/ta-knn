@@ -21,10 +21,14 @@ train_df = pd.read_csv(dir_path + "/data/train_minmax.csv")
 new_data["MinMaxharga"] = (new_data["harga"] - train_df["harga"].min()) / (
     train_df["harga"].max() - train_df["harga"].min()
 )
+
+
 new_data["MinMaxJumlahTerjual"] = (
     new_data["jumlah_terjual"] - train_df["jumlah_terjual"].min()
 ) / (train_df["jumlah_terjual"].max() - train_df["jumlah_terjual"].min())
 new_data["MinMaxBulan"] = 0
+
+
 # new_data["MinMaxBulan"] = (new_data["bulan"] - train_df["bulan"].min()) / (
 #     train_df["bulan"].max() - train_df["bulan"].min()
 # )
@@ -42,16 +46,23 @@ def euclidean_distance(x, y):
     return math.sqrt((x[0] - y[0]) ** 2 + (x[1] - y[1]) ** 2 + (x[2] - y[2]) ** 2)
 
 
+dataIn = []
+
+
 # Fungsi untuk mendapatkan klasifikasi prediksi dengan data baru
 def predict_knn(k, train_data, new_data):
     distances_to_train = []
     for j, train_point in enumerate(train_data):
         distance = euclidean_distance(new_data, train_point)
+        print(new_data, train_point, distance)
         distances_to_train.append((j, distance))
+
     # Urutkan berdasarkan jarak dan ambil k data latih terdekat
     sorted_distances = sorted(distances_to_train, key=lambda x: x[1])[:k]
     # Ambil indeks data latih terdekat
     nearest_indices = [index for index, _ in sorted_distances]
+    # print(distances_to_train)
+
     # Ambil klasifikasi dari data latih terdekat
     nearest_labels = train_df.iloc[nearest_indices]["klasifikasi"].values
     # Tentukan klasifikasi mayoritas sebagai prediksi
@@ -77,4 +88,4 @@ result = {
 
 # Ubah hasil prediksi menjadi format JSON
 result_json = json.dumps(result)
-print(result_json)
+# print(result_json)

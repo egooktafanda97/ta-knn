@@ -32,9 +32,9 @@ Route::get('/', function () {
 Route::get('/dashboard', [DashbaordController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    // Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    // Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    // Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/dataset', [DataController::class, 'index'])->name('dataset.index');
     Route::post('/data-udpate/update/{id}', [DataController::class, 'update']);
     Route::delete('/data-dalate/{id}', [DataController::class, 'destroy']);

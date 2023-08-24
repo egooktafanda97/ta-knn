@@ -16,7 +16,7 @@ export default function train(props) {
         });
         if (XI) {
             setVisibles(false);
-            window.location.reload();
+            // window.location.reload();
         }
     };
 
@@ -108,7 +108,7 @@ export default function train(props) {
                                                 scope="col"
                                                 className="px-6 py-3"
                                             >
-                                                Harga
+                                                Kuantitas Produk
                                             </th>
                                             <th
                                                 scope="col"
@@ -116,12 +116,12 @@ export default function train(props) {
                                             >
                                                 Jumlah Terjual
                                             </th>
-                                            <th
+                                            {/* <th
                                                 scope="col"
                                                 className="px-6 py-3"
                                             >
-                                                Bulan
-                                            </th>
+                                                Tahun
+                                            </th> */}
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -139,9 +139,9 @@ export default function train(props) {
                                                 <td className="px-6 py-4">
                                                     {x?.jumlah_terjual ?? ""}
                                                 </td>
-                                                <td className="px-6 py-4">
+                                                {/* <td className="px-6 py-4">
                                                     {x?.bulan ?? ""}
-                                                </td>
+                                                </td> */}
                                             </tr>
                                         ))}
                                     </tbody>
@@ -180,7 +180,7 @@ export default function train(props) {
                                                                 scope="col"
                                                                 className="px-6 py-3"
                                                             >
-                                                                Harga
+                                                                Kuantitas Produk
                                                             </th>
                                                             <th
                                                                 scope="col"
@@ -192,7 +192,7 @@ export default function train(props) {
                                                                 scope="col"
                                                                 className="px-6 py-3"
                                                             >
-                                                                Bulan
+                                                                Tahun
                                                             </th>
                                                             <th
                                                                 scope="col"
@@ -210,7 +210,8 @@ export default function train(props) {
                                                                 scope="col"
                                                                 className="px-6 py-3"
                                                             >
-                                                                MinMax Harga
+                                                                MinMax Kuantitas
+                                                                Produk
                                                             </th>
                                                             <th
                                                                 scope="col"
@@ -219,12 +220,12 @@ export default function train(props) {
                                                                 MinMax Jumlah
                                                                 Terjual
                                                             </th>
-                                                            <th
+                                                            {/* <th
                                                                 scope="col"
                                                                 className="px-6 py-3"
                                                             >
-                                                                MinMax Bulan
-                                                            </th>
+                                                                MinMax Tahun
+                                                            </th> */}
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -271,11 +272,11 @@ export default function train(props) {
                                                                             x.MinMaxJumlahTerjual
                                                                         }
                                                                     </td>
-                                                                    <td className="px-6 py-4">
+                                                                    {/* <td className="px-6 py-4">
                                                                         {
                                                                             x.MinMaxBulan
                                                                         }
-                                                                    </td>
+                                                                    </td> */}
                                                                 </tr>
                                                             )
                                                         )}
@@ -284,135 +285,135 @@ export default function train(props) {
                                             </div>
                                         </>
                                     }
-                                    dTest={
-                                        <>
-                                            <div
-                                                style={{ overflowX: "scroll" }}
-                                            >
-                                                <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                                                    <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                                                        <tr>
-                                                            <th
-                                                                scope="col"
-                                                                className="px-6 py-3"
-                                                            >
-                                                                Nama Barang
-                                                            </th>
-                                                            <th
-                                                                scope="col"
-                                                                className="px-6 py-3"
-                                                            >
-                                                                Harga
-                                                            </th>
-                                                            <th
-                                                                scope="col"
-                                                                className="px-6 py-3"
-                                                            >
-                                                                Jumlah Terjual
-                                                            </th>
-                                                            <th
-                                                                scope="col"
-                                                                className="px-6 py-3"
-                                                            >
-                                                                Bulan
-                                                            </th>
-                                                            <th
-                                                                scope="col"
-                                                                className="px-6 py-3"
-                                                            >
-                                                                Rata-Rata
-                                                            </th>
-                                                            <th
-                                                                scope="col"
-                                                                className="px-6 py-3"
-                                                            >
-                                                                Klasifikasi
-                                                            </th>
-                                                            <th
-                                                                scope="col"
-                                                                className="px-6 py-3"
-                                                            >
-                                                                MinMax Harga
-                                                            </th>
-                                                            <th
-                                                                scope="col"
-                                                                className="px-6 py-3"
-                                                            >
-                                                                MinMax Jumlah
-                                                                Terjual
-                                                            </th>
-                                                            <th
-                                                                scope="col"
-                                                                className="px-6 py-3"
-                                                            >
-                                                                MinMax Bulan
-                                                            </th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        {dTest.map(
-                                                            (x, index) => (
-                                                                <tr key={index}>
-                                                                    <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                                                        {
-                                                                            x.nama_barang
-                                                                        }
-                                                                    </td>
-                                                                    <td className="px-6 py-4">
-                                                                        {
-                                                                            x.harga
-                                                                        }
-                                                                    </td>
-                                                                    <td className="px-6 py-4">
-                                                                        {
-                                                                            x.jumlah_terjual
-                                                                        }
-                                                                    </td>
-                                                                    <td className="px-6 py-4">
-                                                                        {
-                                                                            x.bulan
-                                                                        }
-                                                                    </td>
-                                                                    <td className="px-6 py-4">
-                                                                        {
-                                                                            x.rata_rata
-                                                                        }
-                                                                    </td>
-                                                                    <td className="px-6 py-4">
-                                                                        {
-                                                                            x.klasifikasi
-                                                                        }
-                                                                    </td>
-                                                                    <td className="px-6 py-4">
-                                                                        {
-                                                                            x.MinMaxharga
-                                                                        }
-                                                                    </td>
-                                                                    <td className="px-6 py-4">
-                                                                        {
-                                                                            x.MinMaxJumlahTerjual
-                                                                        }
-                                                                    </td>
-                                                                    <td className="px-6 py-4">
-                                                                        {
-                                                                            x.MinMaxBulan
-                                                                        }
-                                                                    </td>
-                                                                </tr>
-                                                            )
-                                                        )}
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </>
-                                    }
+                                    // dTest={
+                                    //     <>
+                                    //         <div
+                                    //             style={{ overflowX: "scroll" }}
+                                    //         >
+                                    //             <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                                    //                 <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                                    //                     <tr>
+                                    //                         <th
+                                    //                             scope="col"
+                                    //                             className="px-6 py-3"
+                                    //                         >
+                                    //                             Nama Barang
+                                    //                         </th>
+                                    //                         <th
+                                    //                             scope="col"
+                                    //                             className="px-6 py-3"
+                                    //                         >
+                                    //                             Harga
+                                    //                         </th>
+                                    //                         <th
+                                    //                             scope="col"
+                                    //                             className="px-6 py-3"
+                                    //                         >
+                                    //                             Jumlah Terjual
+                                    //                         </th>
+                                    //                         <th
+                                    //                             scope="col"
+                                    //                             className="px-6 py-3"
+                                    //                         >
+                                    //                             Bulan
+                                    //                         </th>
+                                    //                         <th
+                                    //                             scope="col"
+                                    //                             className="px-6 py-3"
+                                    //                         >
+                                    //                             Rata-Rata
+                                    //                         </th>
+                                    //                         <th
+                                    //                             scope="col"
+                                    //                             className="px-6 py-3"
+                                    //                         >
+                                    //                             Klasifikasi
+                                    //                         </th>
+                                    //                         <th
+                                    //                             scope="col"
+                                    //                             className="px-6 py-3"
+                                    //                         >
+                                    //                             MinMax Harga
+                                    //                         </th>
+                                    //                         <th
+                                    //                             scope="col"
+                                    //                             className="px-6 py-3"
+                                    //                         >
+                                    //                             MinMax Jumlah
+                                    //                             Terjual
+                                    //                         </th>
+                                    //                         <th
+                                    //                             scope="col"
+                                    //                             className="px-6 py-3"
+                                    //                         >
+                                    //                             MinMax Bulan
+                                    //                         </th>
+                                    //                     </tr>
+                                    //                 </thead>
+                                    //                 <tbody>
+                                    //                     {dTest.map(
+                                    //                         (x, index) => (
+                                    //                             <tr key={index}>
+                                    //                                 <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    //                                     {
+                                    //                                         x.nama_barang
+                                    //                                     }
+                                    //                                 </td>
+                                    //                                 <td className="px-6 py-4">
+                                    //                                     {
+                                    //                                         x.harga
+                                    //                                     }
+                                    //                                 </td>
+                                    //                                 <td className="px-6 py-4">
+                                    //                                     {
+                                    //                                         x.jumlah_terjual
+                                    //                                     }
+                                    //                                 </td>
+                                    //                                 <td className="px-6 py-4">
+                                    //                                     {
+                                    //                                         x.bulan
+                                    //                                     }
+                                    //                                 </td>
+                                    //                                 <td className="px-6 py-4">
+                                    //                                     {
+                                    //                                         x.rata_rata
+                                    //                                     }
+                                    //                                 </td>
+                                    //                                 <td className="px-6 py-4">
+                                    //                                     {
+                                    //                                         x.klasifikasi
+                                    //                                     }
+                                    //                                 </td>
+                                    //                                 <td className="px-6 py-4">
+                                    //                                     {
+                                    //                                         x.MinMaxharga
+                                    //                                     }
+                                    //                                 </td>
+                                    //                                 <td className="px-6 py-4">
+                                    //                                     {
+                                    //                                         x.MinMaxJumlahTerjual
+                                    //                                     }
+                                    //                                 </td>
+                                    //                                 <td className="px-6 py-4">
+                                    //                                     {
+                                    //                                         x.MinMaxBulan
+                                    //                                     }
+                                    //                                 </td>
+                                    //                             </tr>
+                                    //                         )
+                                    //                     )}
+                                    //                 </tbody>
+                                    //             </table>
+                                    //         </div>
+                                    //     </>
+                                    // }
                                 />
                             </div>
                         </>
                     }
                     train={
                         <>
-                            <div className="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            {/* <div className="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                                 <button
                                     type="button"
                                     onClick={hndelTrain}
@@ -543,7 +544,7 @@ export default function train(props) {
                                         </tbody>
                                     </table>
                                 </div>
-                            </div>
+                            </div> */}
                         </>
                     }
                 />

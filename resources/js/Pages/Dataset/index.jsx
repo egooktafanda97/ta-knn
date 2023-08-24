@@ -182,7 +182,7 @@ export default function train(props) {
                                         htmlFor="harga"
                                         className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                                     >
-                                        Harga
+                                        Kuantitas Terjual
                                     </label>
                                     <input
                                         type="number"
@@ -214,17 +214,17 @@ export default function train(props) {
                                 </div>
 
                                 <div className="mb-6">
-                                    <label
+                                    {/* <label
                                         htmlFor="bulan"
                                         className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                                     >
                                         Bulan
-                                    </label>
+                                    </label> */}
                                     <input
-                                        type="number"
+                                        type="hidden"
                                         name="bulan"
                                         id="bulan"
-                                        value={formData.bulan}
+                                        value="1"
                                         onChange={handleChange}
                                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                         required
@@ -301,7 +301,7 @@ export default function train(props) {
                                         htmlFor="harga"
                                         className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                                     >
-                                        Harga
+                                        Kuantitas Terjual
                                     </label>
                                     <input
                                         type="number"
@@ -333,17 +333,17 @@ export default function train(props) {
                                 </div>
 
                                 <div className="mb-6">
-                                    <label
+                                    {/* <label
                                         htmlFor="bulan"
                                         className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                                     >
                                         Bulan
-                                    </label>
+                                    </label> */}
                                     <input
-                                        type="number"
+                                        type="hidden"
                                         name="bulan"
                                         id="bulan"
-                                        value={formData.bulan}
+                                        value="1"
                                         onChange={handleChange}
                                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                         required
@@ -372,14 +372,14 @@ export default function train(props) {
                                 Nama Barang
                             </th>
                             <th scope="col" className="px-6 py-3">
-                                Harga
+                                Kuantitas Terjual
                             </th>
                             <th scope="col" className="px-6 py-3">
                                 Jumlah Terjual
                             </th>
-                            <th scope="col" className="px-6 py-3">
+                            {/* <th scope="col" className="px-6 py-3">
                                 Bulan
-                            </th>
+                            </th> */}
                             <th scope="col" className="px-6 py-3">
                                 #
                             </th>
@@ -399,7 +399,7 @@ export default function train(props) {
                                     {" "}
                                     {x?.jumlah_terjual ?? ""}
                                 </td>
-                                <td className="px-6 py-4">{x?.bulan ?? ""}</td>
+                                {/* <td className="px-6 py-4">{x?.bulan ?? ""}</td> */}
                                 <td className="px-6 py-4">
                                     <div className="flex justify-evenly">
                                         <button
