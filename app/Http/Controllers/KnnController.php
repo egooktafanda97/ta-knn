@@ -17,4 +17,11 @@ class KnnController extends Controller
         ];
         return Inertia::render('Knn/predik', $data);
     }
+    public function repost()
+    {
+        $data = [
+            "prediksi" => Predik::orderBy("id", "desc")->get()
+        ];
+        return view("laporan", $data);
+    }
 }

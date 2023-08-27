@@ -3,11 +3,13 @@
 use App\Http\Controllers\DashbaordController;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\KnnController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TrainController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,14 +23,14 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
+    return Inertia::render('login', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
 });
-
+Route::get('/logout', [LoginController::class, 'destroy'])->middleware('auth');
 Route::get('/dashboard', [DashbaordController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
@@ -44,5 +46,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/train', [TrainController::class, 'useTrainModel'])->name('train.train');
     Route::get('/knn', [KnnController::class, 'show'])->name('knn.show');
 });
+Route::get('/laporan', [KnnController::class, 'repost'])->middleware(['auth', 'verified']);
 
 require __DIR__ . '/auth.php';

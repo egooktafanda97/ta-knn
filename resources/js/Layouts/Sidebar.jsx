@@ -13,7 +13,7 @@ export default function Sidebar() {
                     <li>
                         <ResponsiveNavLink
                             className="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
-                            href={route("dataset.index")}
+                            href={route("dashboard")}
                         >
                             <span className="ml-3">Dashboard</span>
                         </ResponsiveNavLink>
@@ -42,6 +42,14 @@ export default function Sidebar() {
                             <span className="ml-3 text-white">
                                 Processing Data
                             </span>
+                        </ResponsiveNavLink>
+                    </li>
+                    <li>
+                        <ResponsiveNavLink
+                            className="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+                            href={route("logout")}
+                        >
+                            <span className="ml-3 text-white">Logout</span>
                         </ResponsiveNavLink>
                     </li>
                 </ul>
